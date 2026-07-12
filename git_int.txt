@@ -1,15 +1,5 @@
-PS C:\Users\sthie\OneDrive\Dokumente\stART\Webseite\Visual_Sudio>
-
-git init
-git add .
-git commit -m "Initialer Commit"
-
-
-git remote add origin https://github.com/wheely-germany/stART-website.git
-git push -u origin main
 
 https://wheely-germany.github.io/stART-website/
-
 
 
 Updates über das terminal!
@@ -17,11 +7,3 @@ git add .
 git commit -m "Update"
 git push
 
-
-git remote remove origin
-git remote add origin https://start-foto.de
-git branch -M main
-nothing to commit, working tree clean
-
-git add .
-git commit -m "Initialer Commit"
