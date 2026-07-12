@@ -1,9 +1,0 @@
-
-https://wheely-germany.github.io/stART-website/
-
-
-Updates über das terminal!
-git add .
-git commit -m "Update"
-git push
-
