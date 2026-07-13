@@ -74,6 +74,12 @@
     return { file: e.file, categories: Array.isArray(e.categories) ? e.categories : [], title: e.title || null };
   });
 
+  //Zufällige Reihenfolge der Bilder
+  for (let i = entries.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [entries[i], entries[j]] = [entries[j], entries[i]];
+  }
+
   const buildItem = async ({ file: filename, categories, title: manifestTitle }) => {
     const src = GALLERY_PATH + filename.split("/").map(encodeURIComponent).join("/");
     const item = document.createElement("figure");
