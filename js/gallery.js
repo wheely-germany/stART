@@ -4,7 +4,7 @@
 (async () => {
   const grid = document.getElementById("galleryGrid");
   if (!grid) { console.warn("Gallery: #galleryGrid nicht gefunden"); return; }
-  const GALLERY_PATH = "galerie/bilder/";
+  const GALLERY_PATH = "galerie/Bilder/";
   const MANIFEST_URL = "galerie/manifest.json";
 
   const formatDate = (d) => { if (!d) return null; const x = new Date(d); if (isNaN(x)) return null; return x.toLocaleDateString("de-DE", { year: "numeric", month: "long", day: "numeric" }); };
