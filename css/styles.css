@@ -753,13 +753,8 @@ body.is-menu-open { overflow: hidden; }
 
 @media (hover: none) {
   .gallery__overlay {
-    opacity: 1;
-    background: linear-gradient(
-      180deg,
-      rgba(14,14,14,0) 60%,
-      rgba(14,14,14,0.85) 100%
-    );
-  }
+    opacity: 0;
+    }
 }
 
 /* =========================================================
