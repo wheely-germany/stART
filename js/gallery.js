@@ -89,7 +89,7 @@
     overlay.className = "gallery__overlay";
     item.appendChild(img); item.appendChild(overlay); grid.appendChild(item);
 
-    const name = filename.split("/").pop().replace(/\.[^.]+$/, "").replace(/_/g, " #$1"); //Bildname + Zahl
+    const name = filename.split("/").pop().replace(/\.[^.]+$/, "").replace(/_(\d)/g, " #$1"); //Bildname + Zahl
     const renderOverlay = (sub) => {
       const subHtml = (sub && sub.length) ? '<p class="gallery__subtitle">' + escapeHtml(sub) + '</p>' : '';
       overlay.innerHTML = '<h3 class="gallery__title">' + escapeHtml(name) + '</h3>' + subHtml;
